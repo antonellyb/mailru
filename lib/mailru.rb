@@ -1,5 +1,10 @@
-require "mailru/version"
+require 'restclient'
 
 module Mailru
-  # Your code goes here...
+  
+  autoload :Request, 'mailru/request'
+
+  class << self
+    attr_accessor :app_id, :secret_key, :private_key, :access_token
+  end
 end

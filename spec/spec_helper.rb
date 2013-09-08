@@ -1,3 +1,4 @@
+require 'mailru'
 require 'rubygems'
 require 'spork'
 
