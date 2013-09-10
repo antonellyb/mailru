@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Mailru::Request do
+describe MailRu::Request do
 
   describe '.make_request' do
     before(:each) { RestClient.stub(:execute) }
@@ -26,8 +26,8 @@ describe Mailru::Request do
 end
 
 class TestRequest
-  extend Mailru::Request
-  Mailru.app_id = '123'
-  Mailru.private_key = '123123'
-  Mailru.secret_key = '321321'
+  extend MailRu::Request
+  MailRu.app_id = '123'
+  MailRu.private_key = '123123'
+  MailRu.secret_key = '321321'
 end

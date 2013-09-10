@@ -1,4 +1,4 @@
-module Mailru
+module MailRu
   
   module Request
 
@@ -6,7 +6,7 @@ module Mailru
 
     def make_request(method, params = {})
 
-      params[:app_id] ||= Mailru.app_id
+      params[:app_id] ||= MailRu.app_id
       params[:secure] ||= '1'
       params[:sig]    ||= sig(params)
       
@@ -16,9 +16,9 @@ module Mailru
              RestClient::Forbidden, 
              RestClient::BadRequest,
              RestClient::ResourceNotFound => e
-        raise Mailru::RequestError.new(e)
+        raise MailRu::RequestError.new(e)
       rescue SocketError => e
-        raise Mailru::ConnectionError.new(e)
+        raise MailRu::ConnectionError.new(e)
       end
     end
     
@@ -26,9 +26,9 @@ module Mailru
 
       def sig(params)
         if params[:secure].eql?('0')
-          Digest::MD5.hexdigest(params[:uid] + sig_params(params) + Mailru.private_key)
+          Digest::MD5.hexdigest(params[:uid] + sig_params(params) + MailRu.private_key)
         else
-          Digest::MD5.hexdigest(sig_params(params) + Mailru.secret_key)
+          Digest::MD5.hexdigest(sig_params(params) + MailRu.secret_key)
         end   
       end
 

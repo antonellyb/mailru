@@ -1,4 +1,4 @@
-# Mailru
+# MailRu
 
 TODO: Write a gem description
 

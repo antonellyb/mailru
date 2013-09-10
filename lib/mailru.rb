@@ -1,7 +1,7 @@
 require 'restclient'
 require 'json'
 
-module Mailru
+module MailRu
   
   autoload :Request, 'mailru/request'
 

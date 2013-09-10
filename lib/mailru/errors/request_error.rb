@@ -1,4 +1,4 @@
-module Mailru 
+module MailRu 
 
   class RequestError < Exception
     

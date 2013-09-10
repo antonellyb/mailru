@@ -5,7 +5,7 @@ require 'mailru/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "mailru"
-  spec.version       = Mailru::VERSION
+  spec.version       = MailRu::VERSION
   spec.authors       = ["Valery Belogrivyi"]
   spec.email         = ["valery.belogrivyi@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}
