@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MailRu::VERSION
   spec.authors       = ["Valery Belogrivyi"]
   spec.email         = ["valery.belogrivyi@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Ruby SDK for mailru moymir"
+  spec.summary       = "mailru moymir library with REST API support"
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -3,10 +3,15 @@ module MailRu
   class RequestError < Exception
     
     def initialize(e)
-      JSON.parse(e.response.body)
-      super(error.message)
+      super(build_message(e))
     end
 
+    private
+      
+      def build_message(e)
+        body = JSON.parse(e.response)
+        "#{body['error']['error_code']} : #{body['error']['error_msg']}" 
+      end
   end
 
 end

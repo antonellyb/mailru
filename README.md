@@ -1,6 +1,6 @@
 # MailRu
 
-TODO: Write a gem description
+Ruby client library for the [mailru REST API](http://api.mail.ru/docs/guides/restapi/).
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+MailRu gem allow use any mailru REST API methods by ruby way
+
+    MailRu.app_id = APP_ID
+    MailRu.secret_key = SECRET_KEY
+    rest = MailRu::Session.new
+   
+    rest.stream_get_by_author(uid: uid)
 
 ## Contributing
 

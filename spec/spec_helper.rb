@@ -1,5 +1,4 @@
 require 'mailru'
-require 'rubygems'
 require 'spork'
 
 Spork.prefork do

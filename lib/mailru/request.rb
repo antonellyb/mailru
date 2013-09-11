@@ -20,6 +20,7 @@ module MailRu
       rescue SocketError => e
         raise MailRu::ConnectionError.new(e)
       end
+
     end
     
     private

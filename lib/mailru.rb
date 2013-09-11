@@ -11,7 +11,7 @@ module MailRu
   autoload :RequestError,     'mailru/errors/request_error'
 
   class << self
-    attr_accessor :app_id, :secret_key, :private_key, :session_key
+    attr_accessor :app_id, :secret_key, :private_key
   end
 
 end
