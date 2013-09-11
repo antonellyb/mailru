@@ -20,8 +20,8 @@ Or install it yourself as:
 
 MailRu gem allow use any mailru REST API methods by ruby way
 
-    MailRu.app_id = APP_ID
-    MailRu.secret_key = SECRET_KEY
+    MailRu.app_id = YOUR_APP_ID
+    MailRu.secret_key = YOUR_APP_SECRET_KEY
     rest = MailRu::Session.new
    
     rest.stream_get_by_author(uid: uid)
