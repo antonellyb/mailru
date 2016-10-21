@@ -6,7 +6,7 @@ require 'mailru/version'
 Gem::Specification.new do |spec|
   spec.name          = "mailru"
   spec.version       = MailRu::VERSION
-  spec.authors       = ["Valery Belogrivyi"]
+  spec.authors       = ["Valery Belogrivyi"] 
   spec.email         = ["valery.belogrivyi@gmail.com"]
   spec.description   = "Ruby SDK for mailru moymir"
   spec.summary       = "mailru moymir library with REST API support"
